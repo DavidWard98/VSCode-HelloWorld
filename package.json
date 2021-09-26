@@ -1,5 +1,5 @@
 {
-  "name": "helloworld",
+	"name": "helloworld",
 	"displayName": "HelloWorld",
 	"description": "",
 	"version": "0.0.1",
@@ -10,14 +10,18 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:helloworld.helloWorld"
+		"onCommand:helloworld.helloWorld"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "helloworld.helloWorld",
-				"title": "Hello World"
+				"title": "This is my new title"
+			},
+			{
+				"command": "helloworld.date",
+				"title": "What is the date?"
 			}
 		]
 	},
