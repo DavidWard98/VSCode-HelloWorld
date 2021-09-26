@@ -17,11 +17,15 @@
 		"commands": [
 			{
 				"command": "helloworld.helloWorld",
-				"title": "This is my new title"
+				"title": "Hello World!"
 			},
 			{
 				"command": "helloworld.date",
 				"title": "What is the date?"
+			},
+			{
+				"command": "helloworld.warning",
+				"title": "Warning!"
 			}
 		]
 	},

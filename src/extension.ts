@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
 	let disposable: vscode.Disposable = vscode.commands.registerCommand('helloworld.helloWorld', () => {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Is it reloaded?');
+		vscode.window.showInformationMessage('Hello VSCode!');
 	});
 
 	context.subscriptions.push(disposable);
@@ -25,6 +25,14 @@ export function activate(context: vscode.ExtensionContext) {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
 		vscode.window.showInformationMessage(`${new Date()}`);
+	});
+
+	context.subscriptions.push(disposable);
+
+	disposable = vscode.commands.registerCommand('helloworld.warning', () => {
+		// The code you place here will be executed every time your command is executed
+		// Display a message box to the user
+		vscode.window.showWarningMessage('Oh No!!');
 	});
 
 	context.subscriptions.push(disposable);
